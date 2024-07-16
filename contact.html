@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <nav>
+        <div class="chunjae">
+          <a href="http://127.0.0.1:5500/home.html">천 재 덕 용</a>
+        </div>
+        <div>
+          <ul class="hyperLink">
+            <a href="http://127.0.0.1:5500/home.html">
+              <li>Home</li>
+            </a>
+            <a href="http://127.0.0.1:5500/about.html">
+              <li>ABOUT</li>
+            </a>
+            <a href="http://127.0.0.1:5500/posts.html">
+              <li>POST</li>
+            </a>
+            <a href="http://127.0.0.1:5500/contact.html">
+              <li>CONTACT</li>
+            </a>
+            <a href="http://127.0.0.1:5500/login.html">
+              <li>LOGIN</li>
+            </a>
+            <a href="images/한덕용 이력서.pdf" target="_blank">
+              <li>PERSNAL</li>
+            </a>
+          </ul>
+        </div>
+      </nav>
+
+      <header>
+        <div>
+          <h1 id="title">Contact Me</h1>
+          <h2>어떤 문제가 있으신가요? 언제든 연락 주세요!</h2>
+        </div>
+      </header>
+    </div>
+    <main class="main">
+      <div>
+        <p id="contactMessage">
+          아래 양식을 작성하여 메시지를 보내주시면 최대한 빨리 연락드리겠습니다!
+        </p>
+        <div class="contactInputGroup">
+          <input id="contactInput" placeholder="Name" required />
+          <input id="contactInput" placeholder="E-mail" type="email" required />
+          <input
+            id="contactInput"
+            placeholder="Phone Number"
+            type="number"
+            required
+          />
+          <textarea placeholder="Message" id="bigMessage"></textarea>
+        </div>
+        <button id="sendButton">SEND</button>
+      </div>
+    </main>
+    <footer>
+      <hr />
+      <div class="socialGroup">
+        <a href="https://www.youtube.com/watch?v=KRaWnd3LJfs" target="_blank">
+          <div id="phone"></div>
+        </a>
+        <a
+          href="https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=0&ie=utf8&query=email"
+          target="_blank"
+        >
+          <div id="email"></div>
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <div id="insta"></div>
+        </a>
+        <a
+          href="https://github.com/HyperQuanx?tab=repositories"
+          target="_blank"
+        >
+          <div id="github"></div>
+        </a>
+      </div>
+      <div id="copyRight">Copyright ⓒ All right reserved</div>
+    </footer>
+  </body>
+</html>

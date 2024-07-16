@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>한글자씩 쾅쾅쾅쾅</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+        font-family: "Arial", sans-serif;
+        font-size: 50px;
+      }
+
+      .text {
+        display: flex;
+      }
+
+      .letter {
+        opacity: 0;
+        transform: scale(0.5);
+        animation: bang 1s infinite;
+      }
+
+      .letter:nth-child(1) {
+        animation-delay: 0s;
+      }
+
+      .letter:nth-child(2) {
+        animation-delay: 0.25s;
+      }
+
+      .letter:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+
+      .letter:nth-child(4) {
+        animation-delay: 0.75s;
+      }
+
+      @keyframes bang {
+        0%,
+        100% {
+          opacity: 0;
+          transform: scale(0.5);
+        }
+        50% {
+          opacity: 1;
+          transform: scale(1.5);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="text">
+      <div class="letter">한</div>
+      <div class="letter">글</div>
+      <div class="letter">자</div>
+      <div class="letter">씩</div>
+    </div>
+  </body>
+</html>
