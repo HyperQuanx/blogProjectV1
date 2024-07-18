@@ -8,15 +8,26 @@
   font-style: normal;
 }
 
-.header {
-  background-image: url(/images/blogBack.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+.headerr {
   width: 100%;
   height: 20vh;
   margin: 0;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.headerr::before {
+  content: "";
+  background-image: url(/images/blogB.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
 }
 
 nav {
@@ -31,6 +42,7 @@ nav {
 
 .chunjae {
   font-size: 40px;
+  position: relative;
 }
 
 .hyperLink {
@@ -38,6 +50,8 @@ nav {
   justify-content: space-around;
   font-size: 20px;
   gap: 30px;
+  position: relative;
+  list-style: none;
 }
 
 #title {
@@ -45,6 +59,11 @@ nav {
   justify-content: center;
   align-items: center;
   font-size: 50px;
+  position: relative;
+}
+
+#subTitle {
+  position: relative;
 }
 
 #loginTitle {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>한글자씩 쾅쾅쾅쾅</title>
+    <ti`tle>쾅쾅쾅쾅</ti>
     <style>
       body {
         display: flex;
@@ -17,12 +17,13 @@
 
       .text {
         display: flex;
+        gap: 30px;
       }
 
       .letter {
         opacity: 0;
         transform: scale(0.5);
-        animation: bang 1s infinite;
+        animation: bang 3s infinite;
       }
 
       .letter:nth-child(1) {
@@ -30,15 +31,15 @@
       }
 
       .letter:nth-child(2) {
-        animation-delay: 0.25s;
+        animation-delay: 0.75s;
       }
 
       .letter:nth-child(3) {
-        animation-delay: 0.5s;
+        animation-delay: 1.5s;
       }
 
       .letter:nth-child(4) {
-        animation-delay: 0.75s;
+        animation-delay: 2.25s;
       }
 
       @keyframes bang {
@@ -56,10 +57,10 @@
   </head>
   <body>
     <div class="text">
-      <div class="letter">한</div>
-      <div class="letter">글</div>
-      <div class="letter">자</div>
-      <div class="letter">씩</div>
+      <div class="letter">천</div>
+      <div class="letter">재</div>
+      <div class="letter">교</div>
+      <div class="letter">육</div>
     </div>
   </body>
 </html>
